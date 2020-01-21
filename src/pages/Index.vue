@@ -161,7 +161,7 @@
             <form
               name="contact"
               method="post"
-              v-on:submit.prevent="handleSubmit"
+              v-on:submit.prevent="handleContactSubmit"
               action="/success/"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
@@ -184,6 +184,7 @@
                     name="name"
                     id="name"
                     placeholder="First Last"
+                    v-model="contactFormData.name"
                     class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-indigo-500 mb-2 p-4"
                     required
                   />
@@ -199,6 +200,7 @@
                     name="email"
                     id="email"
                     placeholder="email@example.com"
+                    v-model="contactFormData.email"
                     class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-indigo-500 mb-2 p-4"
                     required
                   />
@@ -216,16 +218,18 @@
                   name="message"
                   class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none appearance-none focus:border-indigo-500 mb-2 px-4 py-4"
                   placeholder="Enter your message here."
+                  v-model="contactFormData.msg"
                   required
                 ></textarea>
               </div>
 
               <div class="flex justify-end w-full">
-                <input
+                <button
                   type="submit"
-                  value="Submit"
                   class="block bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold tracking-wide uppercase shadow rounded cursor-pointer px-6 py-3"
-                />
+                >
+                  Submit
+                </button>
               </div>
             </form>
           </div>
@@ -247,7 +251,7 @@
           <form
             name="newsletter"
             method="post"
-            v-on:submit.prevent="handleSubmit"
+            v-on:submit.prevent="handleNewsletterSubmit"
             action="/success/"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
@@ -261,6 +265,7 @@
                 type="email"
                 name="email"
                 placeholder="Your email address"
+                v-model="newsletterFormData.email"
                 class="flex-1 bg-background-form rounded sm:rounded-r-none px-4 py-4 leading-normal border border-border-color-primary sm:border-r-0 shadow outline-none focus:border-green-700 z-10"
                 required
               />
@@ -371,7 +376,14 @@ export default {
   },
   data() {
     return {
-      formData: {},
+      contactFormData: {
+        name: '',
+        email: '',
+        msg: '',
+      },
+      newsletterFormData: {
+        email: '',
+      },
     }
   },
   methods: {
@@ -382,13 +394,25 @@ export default {
         )
         .join('&')
     },
-    handleSubmit(e) {
+    handleContactSubmit(e) {
       fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: this.encode({
           'form-name': e.target.getAttribute('name'),
-          ...this.formData,
+          ...this.contactFormData,
+        }),
+      })
+        .then(() => this.$router.push('/success'))
+        .catch(error => alert(error))
+    },
+    handleNewsletterSubmit(e) {
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: this.encode({
+          'form-name': e.target.getAttribute('name'),
+          ...this.newsletterFormData,
         }),
       })
         .then(() => this.$router.push('/success'))
