@@ -218,7 +218,7 @@
                   name="message"
                   class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none appearance-none focus:border-indigo-500 mb-2 px-4 py-4"
                   placeholder="Enter your message here."
-                  v-model="contactFormData.msg"
+                  v-model="contactFormData.message"
                   required
                 ></textarea>
               </div>
@@ -379,7 +379,7 @@ export default {
       contactFormData: {
         name: '',
         email: '',
-        msg: '',
+        message: '',
       },
       newsletterFormData: {
         email: '',
