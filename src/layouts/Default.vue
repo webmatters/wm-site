@@ -149,7 +149,7 @@
             </a>
           </li>
 
-          <li class="mr-8">
+          <!-- <li class="mr-8">
             <a
               href="https://youtube.com/drehimself"
               target="_blank"
@@ -167,7 +167,7 @@
                 />
               </svg>
             </a>
-          </li>
+          </li> -->
 
           <li class="mr-8">
             <a
