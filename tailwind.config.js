@@ -7,10 +7,10 @@ module.exports = {
       },
       borderWidth: {
         '14': '14px',
-      }
+      },
     },
     container: {
-      padding: '1rem'
+      padding: '1rem',
     },
     colors: {
       background: {
@@ -103,5 +103,5 @@ module.exports = {
   },
   plugins: [
     // Some useful comment
-  ]
+  ],
 }

@@ -12,12 +12,12 @@ export default {
   },
   beforeDestroy() {
     window.removeEventListener('keyup', this.handler)
-  }
+  },
 }
 </script>
 
 <style scoped>
-  div {
-    display: none;
-  }
+div {
+  display: none;
+}
 </style>
