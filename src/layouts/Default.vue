@@ -77,13 +77,13 @@
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
             <g-link
-              to="/portfolio"
+              to="/portfolio/"
               class="text-copy-primary hover:text-gray-600"
               >Our Work</g-link
             >
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
-            <g-link to="/blog" class="text-copy-primary hover:text-gray-600"
+            <g-link to="/blog/" class="text-copy-primary hover:text-gray-600"
               >Blog</g-link
             >
           </li>
