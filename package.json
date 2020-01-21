@@ -1,5 +1,5 @@
 {
-  "name": "andremadarang",
+  "name": "webmatterssite",
   "private": true,
   "scripts": {
     "build": "gridsome build",
@@ -18,7 +18,6 @@
     "gridsome-plugin-rss": "^1.2.0",
     "lodash.pick": "^4.4.0",
     "vue": "^2.6.11",
-    "vue-backtotop": "^1.6.1",
     "vue-fuse": "^2.2.0",
     "vue-scrollto": "^2.17.1"
   },

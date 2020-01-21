@@ -4,7 +4,6 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import VueScrollTo from 'vue-scrollto'
 import VueFuse from 'vue-fuse'
-import BackToTop from 'vue-backtotop'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
@@ -16,8 +15,6 @@ export default function (Vue, { router, head, isClient }) {
   })
 
   Vue.use(VueFuse)
-
-  Vue.use(BackToTop)
 
   head.meta.push({
     name: 'keywords',
