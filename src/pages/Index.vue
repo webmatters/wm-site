@@ -7,7 +7,7 @@
           <p>Thoughtfully Designed,</p>
           <p>Meticulously Developed,</p>
           <p>Reasonably Priced.</p>
-            <g-link v-scroll-to="/#contact" class="inline-block bg-green-600 hover:bg-green-500 text-white hover:text-white text-sm font-semibold tracking-wide uppercase shadow-lg rounded-full cursor-pointer mt-12 px-6 py-4">Free Strategy Session</g-link>
+            <g-link v-scroll-to="'#about'" class="inline-block bg-green-600 hover:bg-green-500 text-white hover:text-white text-sm font-semibold tracking-wide uppercase shadow-lg rounded-full cursor-pointer mt-12 px-6 py-4">Free Strategy Session</g-link>
         </div>
       </div>
       <div class="mt-8 sm:mt-0">
