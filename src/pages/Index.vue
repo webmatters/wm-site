@@ -158,9 +158,23 @@
           </div>
 
           <div class="text-lg sm:text-lg mb-16">
-            <form action="#" class="mb-12">
+            <form
+              name="contact"
+              method="post"
+              v-on:submit.prevent="handleSubmit"
+              action="/success/"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              class="mb-12"
+            >
               <div class="flex flex-wrap mb-6 -mx-4">
                 <div class="w-full md:w-1/2 mb-6 md:mb-0 px-4">
+                  <input type="hidden" name="form-name" value="contact" />
+                  <p hidden>
+                    <label>
+                      Don’t fill this out: <input name="bot-field" />
+                    </label>
+                  </p>
                   <label class="block mb-2 text-copy-primary" for="name">
                     Full Name
                   </label>
@@ -230,8 +244,19 @@
             forward.
           </div>
 
-          <form action="#">
+          <form
+            name="newsletter"
+            method="post"
+            v-on:submit.prevent="handleSubmit"
+            action="/success/"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
             <div class="flex flex-col sm:flex-row">
+              <input type="hidden" name="form-name" value="newsletter" />
+              <p hidden>
+                <label> Don’t fill this out: <input name="bot-field" /> </label>
+              </p>
               <input
                 type="email"
                 name="email"
@@ -343,6 +368,32 @@
 export default {
   metaInfo: {
     title: 'Home',
+  },
+  data() {
+    return {
+      formData: {},
+    }
+  },
+  methods: {
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+        )
+        .join('&')
+    },
+    handleSubmit(e) {
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: this.encode({
+          'form-name': e.target.getAttribute('name'),
+          ...this.formData,
+        }),
+      })
+        .then(() => this.$router.push('/success'))
+        .catch(error => alert(error))
+    },
   },
 }
 </script>

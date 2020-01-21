@@ -42,9 +42,7 @@
           <li class="mr-8 mb-6 lg:mb-0">
             <search-input />
           </li>
-          <li class="mr-8 mb-6 lg:mb-0">
-            <theme-switcher :theme="theme" @themeChanged="updateTheme" />
-          </li>
+
           <li class="mr-8 mb-6 lg:mb-0">
             <a
               v-if="$route.path === '/'"
@@ -87,7 +85,7 @@
               >Blog</g-link
             >
           </li>
-          <li>
+          <li class="mr-8 mb-6 lg:mb-0">
             <a
               v-if="$route.path === '/'"
               href="/#contact"
@@ -101,6 +99,9 @@
               class="text-copy-primary hover:text-gray-600"
               >Contact</g-link
             >
+          </li>
+          <li>
+            <theme-switcher :theme="theme" @themeChanged="updateTheme" />
           </li>
         </ul>
       </nav>
