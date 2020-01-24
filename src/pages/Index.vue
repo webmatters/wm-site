@@ -267,7 +267,7 @@ export default {
           ...this.contactFormData,
         }),
       })
-        .then(() => this.alertOpen === true)
+        .then(this.alertOpen === true)
         .catch(error => alert(error))
     },
   },
