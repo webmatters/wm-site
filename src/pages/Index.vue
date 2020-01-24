@@ -204,22 +204,6 @@
                 ></textarea>
               </div>
 
-              <div
-                v-if="alertOpen"
-                class="text-white px-6 py-4 border-0 rounded relative mb-4 bg-green-500"
-              >
-                <span class="text-xl inline-block mr-5 align-middle"></span>
-                <span class="inline-block align-middle mr-8">
-                  <b class="capitalize">Success!</b> Thanks for reaching out. We'll get back to you ASAP!
-                </span>
-                <button
-                  class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none"
-                  v-on:click="closeAlert()"
-                >
-                  <span>×</span>
-                </button>
-              </div>
-
               <div class="flex justify-end w-full">
                 <button
                   type="submit"
@@ -247,7 +231,6 @@ export default {
         email: '',
         message: '',
       },
-      alertOpen: false,
     }
   },
   methods: {
@@ -267,7 +250,7 @@ export default {
           ...this.contactFormData,
         }),
       })
-        .then(this.alertOpen === true)
+        .then(() => this.$router.push('/success'))
         .catch(error => alert(error))
     },
   },
