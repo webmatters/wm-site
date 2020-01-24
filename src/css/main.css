@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .theme-light {
-  --bg-background-primary: white;
+  --bg-background-primary: #f7fafc;
   --bg-background-secondary: #f7fafc;
   --bg-background-tertiary: #e2e8f0;
 
@@ -56,14 +56,6 @@
 
 .content-wrapper {
   transition: background-color 0.25s;
-}
-
-a {
-  @apply text-indigo-700 font-bold;
-}
-
-a:hover {
-  @apply text-indigo-800;
 }
 
 nav .active {

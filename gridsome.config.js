@@ -12,10 +12,10 @@ const postcssPlugins = [tailwind()]
 if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
 
 module.exports = {
-  siteName: 'Gridsome Portfolio Starter',
+  siteName: 'Web Matters',
   siteDescription:
-    'A simple portfolio theme for Gridsome powered by Tailwind CSS v1',
-  siteUrl: 'https://gridsome-portfolio-starter.netlify.com',
+    'Web Matters is web consulting evolved. We use the latest technologies, processes, and business frameworks combined with old-fashioned golden-rule virtues to help entrepreneurs and small businesses achieve their goals.',
+  siteUrl: 'https://www.webmatters.io',
   plugins: [
     {
       use: '@gridsome/vue-remark',
