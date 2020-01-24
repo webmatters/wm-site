@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <!-- Hero section-->
-    <div class="hero" :class="{'bg-white':(theme === 'theme-light')}">
+    <div :class="{'bg-white':(theme === 'theme-light')}" class="border-gray-300 border-b">
       <div class="container mx-auto flex flex-col sm:flex-row justify-between py-20 mt-24 px-8">
         <div class="w-full sm:w-3/5 text-center sm:text-left">
           <h1
@@ -17,8 +17,8 @@
               >All reasonably priced for entrepreneurs</span>.
             </div>
             <a
-              href="/#contact"
-              v-scroll-to="'#contact'"
+              href="/#services"
+              v-scroll-to="'#services'"
               class="inline-block hero-button hover:bg-green-500 text-white hover:text-white text-sm font-semibold tracking-wide shadow-lg rounded-full cursor-pointer mt-16 px-5 py-3"
             >View Our Services</a>
           </div>
@@ -30,38 +30,37 @@
     </div>
     <!-- end hero -->
 
-    <div class="container mx-auto">
-      <div class="text-xl sm:text-3xl font-semibold text-center">
-        When you work with Web Matters you get:
-        <ul class="mt-4 text-lg sm:text-xl font-normal">
-          <li class="checkmark mb-6">
-            A modern, high-performance app built with the latest web
-            technologies
-          </li>
-          <li
-            class="checkmark mb-6"
-          >Marketing strategy from experts with MBAs and decades of experience</li>
-          <li class="checkmark mb-6">
-            User Experience Design (UX), SEO, and Social Media Marketing
-            Best-Practices
-          </li>
-          <li class="checkmark mb-6">
-            Fast, reliable, and scalable cloud hosting on AWS, Heroku, and
-            Netlify
-          </li>
-          <li
-            class="checkmark mb-6"
-          >Continuous user testing and iteration using Lean Startup practices</li>
-        </ul>
+    <!-- Why Web Matters -->
+    <div class="overflow-x-hidden">
+      <div class="mx-auto py-16">
+        <div class="text-xl sm:text-3xl text-center">
+          <h2 class="uppercase tracking-wide font-normal">Why Web Matters?</h2>
+          <ul class="mt-8 text-lg sm:text-xl font-normal">
+            <li class="mb-6">
+              A modern, high-performance app built with the latest web
+              technologies
+            </li>
+            <li class="mb-6">Marketing strategy from experts with MBAs and decades of experience</li>
+            <li class="mb-6">
+              User Experience Design (UX), SEO, and Social Media Marketing
+              Best-Practices
+            </li>
+            <li class="mb-6">
+              Fast, reliable, and scalable cloud hosting on AWS, Heroku, and
+              Netlify
+            </li>
+            <li>Continuous user testing and iteration using Lean Startup practices</li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <div class="overflow-x-hidden">
-      <div
-        class="services container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 my-12 relative"
-      >
-        <h2 class="font-bold mb-6 text-3xl" id="services">Services</h2>
+    <!-- end Why Web Matters -->
 
+    <!-- Services -->
+    <div class="overflow-x-hidden">
+      <div class="container-inner mx-auto text-xl text-center py-16 my-12 relative">
+        <h2 class="uppercase sm:text-3xl tracking-wide font-normal">Our Services</h2>
         <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
           <svg width="170px" height="170px">
             <use xlink:href="#dots-triangle" />
@@ -110,7 +109,6 @@
             <use xlink:href="#dots-triangle" />
           </svg>
         </div>
-
         <div class="flex flex-col sm:flex-row justify-between items-center mb-16">
           <div>
             <g-image
@@ -163,7 +161,6 @@
                     </label>
                   </p>
                   <label class="block mb-2 text-copy-primary" for="name">Full Name</label>
-
                   <input
                     type="text"
                     name="name"
@@ -174,10 +171,8 @@
                     required
                   />
                 </div>
-
                 <div class="w-full px-4 md:w-1/2">
                   <label class="block text-copy-primary mb-2" for="email">Email Address</label>
-
                   <input
                     type="email"
                     name="email"
@@ -189,10 +184,8 @@
                   />
                 </div>
               </div>
-
               <div class="w-full mb-12">
                 <label class="block text-copy-primary mb-2" for="message">Message</label>
-
                 <textarea
                   id="message"
                   rows="5"
@@ -203,7 +196,6 @@
                   required
                 ></textarea>
               </div>
-
               <div class="flex justify-end w-full">
                 <button
                   type="submit"
@@ -260,5 +252,15 @@ export default {
 <style scoped>
 .hero-button {
   background-image: linear-gradient(90deg, #1caecd, #1ccdaa);
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #7f9cf5;
+  content: ' ';
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 1.25rem;
 }
 </style>

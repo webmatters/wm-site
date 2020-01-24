@@ -53,9 +53,9 @@
             >About</a>
             <g-link v-else to="/#about" class="text-copy-primary hover:text-gray-600">About</g-link>
           </li>
-          <li class="mr-8 mb-6 lg:mb-0">
+          <!-- <li class="mr-8 mb-6 lg:mb-0">
             <g-link to="/portfolio/" class="text-copy-primary hover:text-gray-600">Our Work</g-link>
-          </li>
+          </li>-->
           <li class="mr-8 mb-6 lg:mb-0">
             <g-link to="/blog/" class="text-copy-primary hover:text-gray-600">Blog</g-link>
           </li>
@@ -64,8 +64,8 @@
               v-if="$route.path === '/'"
               href="/#contact"
               v-scroll-to="'#contact'"
-              class="text-copy-primary hover:text-gray-600"
-            >Contact</a>
+              class="bg-indigo-500 hover:bg-indigo-400 text-white hover:text-white font-semibold tracking-wide shadow-lg rounded-full cursor-pointer mt-16 px-4 py-2"
+            >Free Consultation</a>
             <g-link v-else to="/#contact" class="text-copy-primary hover:text-gray-600">Contact</g-link>
           </li>
           <li>
