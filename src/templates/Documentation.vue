@@ -1,9 +1,7 @@
 <template>
   <Layout>
-    <div class="container-inner mx-auto my-16">
-      <h1 class="text-4xl font-bold leading-tight">
-        {{ $page.documentation.title }}
-      </h1>
+    <div class="container-inner mx-auto py-16 mt-24">
+      <h1 class="text-4xl font-bold leading-tight">{{ $page.documentation.title }}</h1>
       <div class="markdown-body">
         <VueRemarkContent />
       </div>

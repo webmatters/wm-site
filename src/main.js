@@ -16,24 +16,35 @@ export default function(Vue, { router, head, isClient }) {
 
   Vue.use(VueFuse)
 
+  head.htmlAttrs = {
+    lang: 'en',
+    class: 'antialiased leading-normal tracking-normal, min-h-full',
+  }
+
+  head.bodyAttrs = {
+    class: 'min-h-full font-body bg-gray-100',
+  }
+
   head.meta.push({
     name: 'keywords',
     content:
-      'Gridsome,Vue,Tailwind,Tailwind CSS,JavaScript,HTML,CSS,Vue.js,VueJS',
+      'web, design, development, marketing, consulting, raleigh, Gridsome,Vue,Tailwind,Tailwind CSS,JavaScript,HTML,CSS,Vue.js,VueJS',
   })
 
   head.meta.push({
     name: 'description',
-    content: 'Gridsome Portfolio Starter',
+    content: 'Web Matters',
   })
 
   head.meta.push({
     name: 'author',
-    content: 'Andre Madarang',
+    content: 'Andrew Smith',
   })
 
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,700',
+    // href: 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,700',
+    href: 'https://fonts.googleapis.com/css?family=Lato:400,700',
+    href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700',
   })
 }

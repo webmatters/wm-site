@@ -1,45 +1,46 @@
 <template>
   <Layout>
-    <div
-      class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16"
-    >
-      <div class="w-full sm:w-3/5 text-center sm:text-left">
-        <h1 class="text-4xl font-semibold leading-tight">
-          Web Apps to Move Your Business
-        </h1>
-        <div class="mt-2 text-indigo-500 leading-tight text-2xl font-semibold">
-          <div>Thoughtfully Designed,</div>
-          <div>Meticulously Developed,</div>
-          <div>Reasonably Priced.</div>
-          <a
-            href="/#contact"
-            v-scroll-to="'#contact'"
-            class="inline-block bg-green-600 hover:bg-green-500 text-white hover:text-white text-sm font-semibold tracking-wide uppercase shadow-lg rounded-full cursor-pointer mt-12 px-6 py-4"
-            >Free Strategy Session</a
-          >
+    <!-- Hero section-->
+    <div class="hero" :class="{'bg-white':(theme === 'theme-light')}">
+      <div class="container mx-auto flex flex-col sm:flex-row justify-between py-20 mt-24 px-8">
+        <div class="w-full sm:w-3/5 text-center sm:text-left">
+          <h1
+            class="text-5xl font-bold leading-none tracking-tight"
+          >Web Services to Propel Your Business</h1>
+          <div class="mt-6 leading-normal text-xl font-normal">
+            <div>
+              Thoughtfully designed and
+              meticulously developed apps driven by
+              expert product strategy and marketing.
+              <span
+                class="font-semibold"
+              >All reasonably priced for entrepreneurs</span>.
+            </div>
+            <a
+              href="/#contact"
+              v-scroll-to="'#contact'"
+              class="inline-block hero-button hover:bg-green-500 text-white hover:text-white text-sm font-semibold tracking-wide shadow-lg rounded-full cursor-pointer mt-16 px-5 py-3"
+            >View Our Services</a>
+          </div>
         </div>
-      </div>
-      <div class="mt-8 sm:mt-0">
-        <g-image
-          src="../../static/moving_forward.svg"
-          alt="hero"
-          class="mx-auto sm:mx-0"
-        />
+        <div class="mt-8 sm:mt-0">
+          <g-image src="../../static/moving_forward.svg" alt="hero" class="mx-auto sm:mx-0" />
+        </div>
       </div>
     </div>
     <!-- end hero -->
 
-    <div class="container-inner mx-auto">
-      <div class="text-xl sm:text-2xl font-semibold">
+    <div class="container mx-auto">
+      <div class="text-xl sm:text-3xl font-semibold text-center">
         When you work with Web Matters you get:
         <ul class="mt-4 text-lg sm:text-xl font-normal">
           <li class="checkmark mb-6">
             A modern, high-performance app built with the latest web
             technologies
           </li>
-          <li class="checkmark mb-6">
-            Marketing strategy from experts with MBAs and decades of experience
-          </li>
+          <li
+            class="checkmark mb-6"
+          >Marketing strategy from experts with MBAs and decades of experience</li>
           <li class="checkmark mb-6">
             User Experience Design (UX), SEO, and Social Media Marketing
             Best-Practices
@@ -48,9 +49,9 @@
             Fast, reliable, and scalable cloud hosting on AWS, Heroku, and
             Netlify
           </li>
-          <li class="checkmark mb-6">
-            Continuous user testing and iteration using Lean Startup practices
-          </li>
+          <li
+            class="checkmark mb-6"
+          >Continuous user testing and iteration using Lean Startup practices</li>
         </ul>
       </div>
     </div>
@@ -61,10 +62,7 @@
       >
         <h2 class="font-bold mb-6 text-3xl" id="services">Services</h2>
 
-        <div
-          class="absolute right-0"
-          style="top: 50px; transform: translate(100%) rotate(180deg)"
-        >
+        <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
           <svg width="170px" height="170px">
             <use xlink:href="#dots-triangle" />
           </svg>
@@ -104,23 +102,16 @@
     </div>
 
     <div class="overflow-x-hidden border-gray-200 border-b">
-      <div
-        class="get-to-know-me container-inner mx-auto text-xl pb-16 relative"
-      >
+      <div class="get-to-know-me container-inner mx-auto text-xl pb-16 relative">
         <h2 class="font-bold mb-6 text-3xl" id="about">About</h2>
 
-        <div
-          class="absolute left-0"
-          style="top: 50px; transform: translateX(-100%)"
-        >
+        <div class="absolute left-0" style="top: 50px; transform: translateX(-100%)">
           <svg width="170px" height="170px">
             <use xlink:href="#dots-triangle" />
           </svg>
         </div>
 
-        <div
-          class="flex flex-col sm:flex-row justify-between items-center mb-16"
-        >
+        <div class="flex flex-col sm:flex-row justify-between items-center mb-16">
           <div>
             <g-image
               src="../../static/selfie.jpg"
@@ -141,13 +132,8 @@
     <div class="overflow-x-hidden">
       <div class="contact-me bg-background-secondary pt-16">
         <div class="container-inner mx-auto text-xl pb-4 relative">
-          <h2 class="font-bold mb-6" id="contact">
-            Get a Free 30-minute Strategy Session:
-          </h2>
-          <div
-            class="absolute right-0 top-0"
-            style="transform: translate(100%) rotate(180deg)"
-          >
+          <h2 class="font-bold mb-6" id="contact">Get a Free 30-minute Strategy Session:</h2>
+          <div class="absolute right-0 top-0" style="transform: translate(100%) rotate(180deg)">
             <svg width="170px" height="170px">
               <use xlink:href="#dots-triangle" />
             </svg>
@@ -172,12 +158,11 @@
                   <input type="hidden" name="form-name" value="contact" />
                   <p hidden>
                     <label>
-                      Don’t fill this out: <input name="bot-field" />
+                      Don’t fill this out:
+                      <input name="bot-field" />
                     </label>
                   </p>
-                  <label class="block mb-2 text-copy-primary" for="name">
-                    Full Name
-                  </label>
+                  <label class="block mb-2 text-copy-primary" for="name">Full Name</label>
 
                   <input
                     type="text"
@@ -191,9 +176,7 @@
                 </div>
 
                 <div class="w-full px-4 md:w-1/2">
-                  <label class="block text-copy-primary mb-2" for="email">
-                    Email Address
-                  </label>
+                  <label class="block text-copy-primary mb-2" for="email">Email Address</label>
 
                   <input
                     type="email"
@@ -208,9 +191,7 @@
               </div>
 
               <div class="w-full mb-12">
-                <label class="block text-copy-primary mb-2" for="message">
-                  Message
-                </label>
+                <label class="block text-copy-primary mb-2" for="message">Message</label>
 
                 <textarea
                   id="message"
@@ -227,9 +208,7 @@
                 <button
                   type="submit"
                   class="block bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold tracking-wide uppercase shadow rounded cursor-pointer px-6 py-3"
-                >
-                  Submit
-                </button>
+                >Submit</button>
               </div>
             </form>
           </div>
@@ -259,7 +238,10 @@
             <div class="flex flex-col sm:flex-row">
               <input type="hidden" name="form-name" value="newsletter" />
               <p hidden>
-                <label> Don’t fill this out: <input name="bot-field" /> </label>
+                <label>
+                  Don’t fill this out:
+                  <input name="bot-field" />
+                </label>
               </p>
               <input
                 type="email"
@@ -421,3 +403,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.hero-button {
+  background-image: linear-gradient(90deg, #1caecd, #1ccdaa);
+}
+</style>
