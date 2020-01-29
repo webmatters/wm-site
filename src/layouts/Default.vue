@@ -3,14 +3,18 @@
     class="content-wrapper bg-background-primary font-sans text-copy-primary flex flex-col min-h-screen"
     :class="theme"
   >
-    <header class="fixed w-full z-10 top-0" :class="{'bg-white shadow':(theme === 'theme-light')}">
+    <header
+      id="top"
+      class="fixed w-full z-10 top-0"
+      :class="{'bg-white shadow':(theme === 'theme-light')}"
+    >
       <nav class="container mx-auto flex flex-wrap justify-between items-center py-8 px-4">
         <div>
-          <g-link v-if="theme === 'theme-light'" to="/">
+          <a v-if="$route.path === '/'" href="/#top" v-scroll-to="'#top'">
             <g-image src="../../static/logo.svg" class="w-40" alt="logo" />
-          </g-link>
+          </a>
           <g-link v-else to="/">
-            <g-image src="../../static/logo_dark_mode.svg" class="w-40" alt="logo" />
+            <g-image src="../../static/logo.svg" class="w-40" alt="logo" />
           </g-link>
         </div>
         <div class="block lg:hidden">
@@ -53,9 +57,6 @@
             >About</a>
             <g-link v-else to="/#about" class="text-copy-primary hover:text-gray-600">About</g-link>
           </li>
-          <!-- <li class="mr-8 mb-6 lg:mb-0">
-            <g-link to="/portfolio/" class="text-copy-primary hover:text-gray-600">Our Work</g-link>
-          </li>-->
           <li class="mr-8 mb-6 lg:mb-0">
             <g-link to="/blog/" class="text-copy-primary hover:text-gray-600">Blog</g-link>
           </li>
@@ -68,9 +69,9 @@
             >Free Consultation</a>
             <g-link v-else to="/#contact" class="text-copy-primary hover:text-gray-600">Contact</g-link>
           </li>
-          <li>
+          <!-- <li>
             <theme-switcher :theme="theme" @themeChanged="updateTheme" />
-          </li>
+          </li>-->
         </ul>
       </nav>
     </header>

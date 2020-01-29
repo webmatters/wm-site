@@ -60,7 +60,7 @@
 
 nav .active {
   font-weight: bold;
-  @apply border-black border-b;
+  @apply border-indigo-400 border-b-2;
 }
 
 .container-inner {
