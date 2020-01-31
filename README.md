@@ -15,7 +15,6 @@ A simple portfolio starter theme for Gridsome
 - Scroll to sections using [vue-scrollto](https://github.com/rigor789/vue-scrollto)
 - Blog with markdown content for posts
 - Documentation type that shows how to use Vue components in Markdown (click Docs)
-- Theme Switcher with Dark Mode
 - Search posts with [Fuse.js](https://fusejs.io) and [vue-fuse](https://github.com/shayneo/vue-fuse)
 - Tags for posts
 - Basic pagination
