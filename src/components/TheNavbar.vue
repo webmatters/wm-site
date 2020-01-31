@@ -18,7 +18,7 @@
         <button
           @click="isOpen = !isOpen"
           type="button"
-          class="block focus:outline-none text-gray-900 hover:text-gray-600 active:text-gray-900"
+          class="block focus:outline-none text-primary hover:text-secondary active:text-primary"
         >
           <menu-icon v-if="!isOpen" class="fill-current" />
           <close-icon v-else class="fill-current" />
@@ -29,25 +29,23 @@
     <!-- Nav links -->
     <ul
       :class="isOpen ? 'block' : 'hidden'"
-      class="px-8 pb-4 md:flex md:items-center md:p-0 font-semibold uppercase"
+      class="px-8 pb-4 md:flex md:items-center md:p-0 font-semibold text-xl"
     >
       <li>
-        <search-input
-          class="block md:ml-6 mt-2 sm:mt-0 text-primary hover:text-secondary"
-        />
+        <search-input class="block md:ml-6 my-3 sm:my-0" />
       </li>
       <li>
         <a
           v-if="$route.path === '/'"
           href="/#services"
           v-scroll-to="'#services'"
-          class="block md:ml-6 mt-2 sm:mt-0 text-primary hover:text-secondary"
+          class="nav-link block md:ml-6 mt-3 sm:mt-0 text-primary"
           >Services</a
         >
         <g-link
           v-else
           to="/#services"
-          class="block md:ml-6 mt-2 sm:mt-0 text-primary hover:text-secondary"
+          class="nav-link block md:ml-6 mt-3 sm:mt-0 text-primary"
         >
           Services
         </g-link>
@@ -57,21 +55,21 @@
           v-if="$route.path === '/'"
           href="/#about"
           v-scroll-to="'#about'"
-          class="block md:ml-6 mt-2 sm:mt-0 text-primary hover:text-secondary"
-          >About Us</a
+          class="nav-link block md:ml-6 mt-3 sm:mt-0 text-primary "
+          >About</a
         >
         <g-link
           v-else
           to="/#about"
-          class="block md:ml-6 mt-2 sm:mt-0 text-primary hover:text-secondary"
+          class="nav-link block md:ml-6 mt-3 sm:mt-0 text-primary "
         >
-          About Us
+          About
         </g-link>
       </li>
       <li>
         <g-link
           to="/blog"
-          class="block md:ml-6 mt-2 sm:mt-0 text-primary hover:text-secondary"
+          class="nav-link block md:ml-6 mt-3 sm:mt-0 text-primary "
         >
           Blog
         </g-link>
@@ -81,15 +79,15 @@
           v-if="$route.path === '/'"
           href="/#contact"
           v-scroll-to="'#contact'"
-          class="block md:ml-6 mt-2 sm:mt-0 text-primary hover:text-secondary"
-          >Contact Us</a
+          class="nav-link block md:ml-6 mt-3 sm:mt-0 text-primary "
+          >Contact</a
         >
         <g-link
           v-else
           to="/#about"
-          class="block md:ml-6 mt-2 sm:mt-0 text-primary hover:text-secondary"
+          class="nav-link block md:ml-6 mt-3 sm:mt-0 text-primary "
         >
-          Contact Us
+          Contact
         </g-link>
       </li>
     </ul>
@@ -114,3 +112,37 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.nav-link {
+  text-decoration: none;
+  position: relative;
+}
+.nav-link:focus {
+  color: #1a202c;
+}
+.nav-link:hover:after {
+  content: '';
+
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+
+  border-width: 0 0 2px;
+  border-style: solid;
+  border-color: #ed8936;
+}
+.nav-link:focus:after {
+  content: '';
+
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+
+  border-width: 0 0 2px;
+  border-style: solid;
+  border-color: #ed8936;
+}
+</style>

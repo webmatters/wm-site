@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-wrap">
     <div class="w-full px-4">
-      <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
+      <ul class="flex mb-0 list-none flex-wrap pt-3 flex-row">
         <li class="-mb-px mr-2 last:mr-0 flex-auto text-center cursor-pointer">
           <a
             @click="toggleTabs(1)"
@@ -9,9 +9,9 @@
               'text-primary bg-white': openTab !== 1,
               'text-white bg-primary': openTab === 1,
             }"
-            class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal"
+            class="text-sm font-bold uppercase px-5 py-3 shadow-lg rounded rounded-b-none block leading-normal"
           >
-            Design
+            Website
           </a>
         </li>
         <li class="-mb-px mr-2 last:mr-0 flex-auto text-center cursor-pointer">
@@ -21,9 +21,9 @@
               'text-primary bg-white': openTab !== 2,
               'text-white bg-primary': openTab === 2,
             }"
-            class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal"
+            class="text-sm font-bold uppercase px-5 py-3 shadow-lg rounded rounded-b-none block leading-normal"
           >
-            Development
+            App
           </a>
         </li>
         <li class="-mb-px mr-2 last:mr-0 flex-auto text-center cursor-pointer">
@@ -33,7 +33,7 @@
               'text-primary bg-white': openTab !== 3,
               'text-white bg-primary': openTab === 3,
             }"
-            class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal"
+            class="text-sm font-bold uppercase px-5 py-3 shadow-lg rounded rounded-b-none block leading-normal"
           >
             Marketing
           </a>
@@ -45,23 +45,47 @@
               'text-primary bg-white': openTab !== 4,
               'text-white bg-primary': openTab === 4,
             }"
-            class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal"
+            class="text-sm font-bold uppercase px-5 py-3 shadow-lg rounded rounded-b-none block leading-normal"
           >
-            Business Intelligence
+            Design
+          </a>
+        </li>
+        <li class="-mb-px mr-2 last:mr-0 flex-auto text-center cursor-pointer">
+          <a
+            @click="toggleTabs(5)"
+            v-bind:class="{
+              'text-primary bg-white': openTab !== 5,
+              'text-white bg-primary': openTab === 5,
+            }"
+            class="text-sm font-bold uppercase px-5 py-3 shadow-lg rounded rounded-b-none block leading-normal"
+          >
+            Analytics
+          </a>
+        </li>
+        <li class="-mb-px last:mr-0 flex-auto text-center cursor-pointer">
+          <a
+            @click="toggleTabs(6)"
+            v-bind:class="{
+              'text-primary bg-white': openTab !== 6,
+              'text-white bg-primary': openTab === 6,
+            }"
+            class="text-sm font-bold uppercase px-5 py-3 rounded rounded-b-none block leading-normal"
+          >
+            Strategy
           </a>
         </li>
       </ul>
       <div
-        class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded"
+        class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-b border-t-2 border-primary"
       >
         <div class="px-4 py-8 flex-auto">
           <div class="tab-content tab-space">
             <div v-bind:class="{ hidden: openTab !== 1, block: openTab === 1 }">
               <p>
-                UI/UX Design
+                Static marketing websites
                 <br />
                 <br />
-                Graphic Design
+                Blogs, eCommerce shops
               </p>
             </div>
             <div v-bind:class="{ hidden: openTab !== 2, block: openTab === 2 }">
@@ -74,7 +98,7 @@
             </div>
             <div v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }">
               <p>
-                Strategy, marketing campaigns
+                Marketing Campaigns, Social Media
                 <br />
                 <br />
                 Market Research
@@ -82,10 +106,26 @@
             </div>
             <div v-bind:class="{ hidden: openTab !== 4, block: openTab === 4 }">
               <p>
-                Management, Reporting
+                UI/UX
+                <br />
+                <br />
+                Graphic Design, logos, business cards, letterhead
+              </p>
+            </div>
+            <div v-bind:class="{ hidden: openTab !== 5, block: openTab === 5 }">
+              <p>
+                Data science, reporting, Visualizations
                 <br />
                 <br />
                 Analytics
+              </p>
+            </div>
+            <div v-bind:class="{ hidden: openTab !== 6, block: openTab === 6 }">
+              <p>
+                Product Strategy, Marketing Strategy
+                <br />
+                <br />
+                Pragmatic Framework
               </p>
             </div>
           </div>

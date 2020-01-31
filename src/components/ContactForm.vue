@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-16 mx-auto text-xl pb-4">
+  <div class="pt-16 mx-auto text-xl pb-4 text-white">
     <h2 class="font-bold mb-6 text-center">
       Get a Free 30-minute Strategy Session
     </h2>
