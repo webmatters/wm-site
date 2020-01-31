@@ -1,6 +1,3 @@
-// This is the main.js file. Import global CSS and scripts here.
-// The Client API can be used here. Learn more: gridsome.org/docs/client-api
-
 import DefaultLayout from '~/layouts/Default.vue'
 import VueScrollTo from 'vue-scrollto'
 import VueFuse from 'vue-fuse'
@@ -18,11 +15,8 @@ export default function(Vue, { router, head, isClient }) {
 
   head.htmlAttrs = {
     lang: 'en',
-    class: 'antialiased leading-normal tracking-normal, min-h-full',
-  }
-
-  head.bodyAttrs = {
-    class: 'min-h-full font-body bg-gray-100',
+    class:
+      'font-body antialiased leading-normal tracking-normal, w-full, min-h-screen, text-gray-900',
   }
 
   head.meta.push({
@@ -31,20 +25,22 @@ export default function(Vue, { router, head, isClient }) {
       'web, design, development, marketing, consulting, raleigh, Gridsome,Vue,Tailwind,Tailwind CSS,JavaScript,HTML,CSS,Vue.js,VueJS',
   })
 
-  head.meta.push({
-    name: 'description',
-    content: 'Web Matters',
-  })
-
-  head.meta.push({
-    name: 'author',
-    content: 'Andrew Smith',
-  })
+  head.meta.push(
+    { charset: 'utf-8' },
+    {
+      name: 'author',
+      content: 'Web Matters',
+    },
+    { name: 'description', content: "Raleigh's premier web services agency" },
+    {
+      name: 'keywords',
+      content:
+        'websites, mobile, applications, marketing, SEO, UX, design,web, design, development, consulting, raleigh, Gridsome,Vue,Tailwind,Tailwind CSS,JavaScript,HTML,CSS,Vue.js,VueJS',
+    }
+  )
 
   head.link.push({
     rel: 'stylesheet',
-    // href: 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,700',
-    href: 'https://fonts.googleapis.com/css?family=Lato:400,700',
-    href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700',
+    href: 'https://fonts.googleapis.com/css?family=Open+Sans&display=swap',
   })
 }
