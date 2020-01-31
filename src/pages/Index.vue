@@ -37,20 +37,24 @@
     </section>
 
     <!-- Services -->
-    <section id="services" class="container mx-auto text-center pt-12 pb-24">
-      <h2 class="uppercase text-2xl">What We Do</h2>
-      <services-tabs class="mt-8" />
+    <section id="services" class=" bg-gray-900">
+      <div class="container mx-auto text-center pt-12 pb-24">
+        <h2 class="uppercase text-white text-3xl">What do you Need?</h2>
+        <services-tabs class="mt-12" />
+      </div>
     </section>
 
     <!-- About -->
     <section id="about" class="container mx-auto text-center py-12">
-      <h2 class="uppercase text-2xl">Why Web Matters?</h2>
+      <h2 class="uppercase text-3xl">Why Web Matters?</h2>
       <div class="mt-8">Test text</div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="container mx-auto">
-      <contact-form />
+    <section id="contact" class="bg-gray-900">
+      <div class="container mx-auto">
+        <contact-form />
+      </div>
     </section>
   </Layout>
 </template>

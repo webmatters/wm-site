@@ -13,22 +13,30 @@
               class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center rounded-full outline-none focus:outline-none mr-2 pl-2"
               type="button"
             >
-              <twitter-icon /></button
+              <a href="https://twitter.com/thewebmatters" target="_blank">
+                <twitter-icon />
+              </a></button
             ><button
               class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 pl-2"
               type="button"
             >
-              <facebook-icon /></button
+              <a href="https://www.facebook.com" target="_blank"
+                ><facebook-icon
+              /></a></button
             ><button
               class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 pl-2"
               type="button"
             >
-              <dribbble-icon /></button
+              <a href="https://www.dribbble.com" target="_blank"
+                ><dribbble-icon
+              /></a></button
             ><button
               class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 pl-2"
               type="button"
             >
-              <github-icon />
+              <a href="https://github.com/webmatters/wm-site" target="_blank"
+                ><github-icon
+              /></a>
             </button>
           </div>
         </div>
@@ -82,12 +90,12 @@ export default {
     TwitterIcon,
     FacebookIcon,
     DribbbleIcon,
-    GithubIcon
+    GithubIcon,
   },
   data() {
     return {
-      date: new Date().getFullYear()
+      date: new Date().getFullYear(),
     }
-  }
+  },
 }
 </script>

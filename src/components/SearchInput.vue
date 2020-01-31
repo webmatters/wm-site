@@ -6,7 +6,7 @@
       <input
         type="text"
         placeholder="Search blog"
-        class="bg-background-form border border-gray-500 rounded-full px-4 pl-10 py-2 outline-none focus:border-green-500 w-80"
+        class="bg-background-form border border-gray-400 rounded-full px-4 pl-10 py-2 outline-none focus:border-primary w-80"
         v-model="query"
         @input="softReset"
         @keyup="performSearch"
@@ -21,7 +21,7 @@
       <div class="absolute top-0 ml-3" style="top:10px">
         <svg
           fill="currentColor"
-          class="text-gray-500 h-5 w-5"
+          class="text-gray-400 h-5 w-5"
           viewBox="0 0 24 24"
           width="24"
           height="24"
@@ -34,10 +34,12 @@
       </div>
       <div
         v-if="query.length > 0"
-        class="absolute top-0 right-0 text-2xl mr-3 cursor-pointer text-gray-600 hover:text-gray-800"
+        class="absolute top-0 right-0 text-2xl mr-3 cursor-pointer text-primary hover:text-gray-800"
         style="top:2px;"
         @click="reset"
-      >&times;</div>
+      >
+        &times;
+      </div>
     </div>
     <transition name="fade">
       <div
@@ -55,10 +57,8 @@
             :class="{ 'search-highlighted': index === highlightedIndex }"
           >
             {{ post.item.title }}
-            <span class="block font-normal text-copy-primary text-sm my-1">
-              {{
-              post.item.summary
-              }}
+            <span class="block font-normal text-secondary text-sm my-1">
+              {{ post.item.summary }}
             </span>
           </a>
 
@@ -68,7 +68,8 @@
           >
             <p class="my-0">
               No results for '
-              <strong>{{ query }}</strong>'
+              <strong>{{ query }}</strong
+              >'
             </p>
           </div>
         </div>
