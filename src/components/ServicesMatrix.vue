@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="md:flex text-center">
-      <div class="md:w-1/3 flex flex-col items-center justify-center md:mr-8 block">
+      <div class="md:w-1/3 flex flex-col items-center justify-center md:mr-8 mt-12">
         <div>
           <monitor-icon :size="48" />
         </div>
