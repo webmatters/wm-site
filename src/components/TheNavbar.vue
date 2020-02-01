@@ -6,18 +6,18 @@
       <!-- Brand Logo -->
       <div>
         <g-link to="/">
-          <g-image src="~/assets/img/brand.svg" alt="Web Matters logo" width="250" />
+          <g-image src="~/assets/img/brand.svg" alt="Web Matters logo" class="w-full" />
         </g-link>
       </div>
       <!-- Mobile Menu Toggler -->
-      <div class="md:hidden">
+      <div class="md:hidden ml-12">
         <button
           @click="isOpen = !isOpen"
           type="button"
           class="block focus:outline-none text-primary hover:text-secondary active:text-primary"
         >
-          <menu-icon v-if="!isOpen" class="fill-current" />
-          <close-icon v-else class="fill-current" />
+          <menu-icon v-if="!isOpen" class="fill-current" :size="32" />
+          <close-icon v-else class="fill-current" :size="32" />
         </button>
       </div>
     </div>
@@ -25,7 +25,7 @@
     <!-- Nav links -->
     <ul
       :class="isOpen ? 'block' : 'hidden'"
-      class="px-8 pb-4 md:flex md:items-center md:p-0 font-semibold text-secondary text-xl"
+      class="px-8 pb-4 md:flex md:items-center md:p-0 text-secondary text-2xl"
     >
       <li>
         <search-input class="block md:ml-6 my-3 md:my-0" />
@@ -35,7 +35,7 @@
           v-if="$route.path === '/'"
           href="/#services"
           v-scroll-to="'#services'"
-          class="nav-link block md:ml-6 mt-3 md:mt-0"
+          class="nav-link block md:ml-6 mt-3 md:mt-0 md:ml-8"
         >Services</a>
         <g-link v-else to="/#services" class="nav-link block md:ml-6 mt-3 md:mt-0">Services</g-link>
       </li>

@@ -1,15 +1,13 @@
 <template>
   <Layout>
-    <div class="container mx-auto py-16 mt-24">
+    <div class="container mx-auto py-16 md:mt-24 px-4">
       <div
         v-for="post in $page.posts.edges"
         :key="post.id"
         class="post border-gray-400 border-b mb-12"
       >
         <h2 class="text-3xl font-bold">
-          <g-link :to="post.node.path" class="text-copy-primary">
-            {{ post.node.title }}
-          </g-link>
+          <g-link :to="post.node.path" class="text-copy-primary">{{ post.node.title }}</g-link>
         </h2>
         <div class="text-copy-secondary mb-4">
           <span>{{ post.node.date }}</span>
@@ -20,9 +18,7 @@
         <div class="text-lg mb-4">{{ post.node.summary }}</div>
 
         <div class="mb-8">
-          <g-link :to="post.node.path" class="font-bold uppercase"
-            >Read More</g-link
-          >
+          <g-link :to="post.node.path" class="font-bold uppercase">Read More</g-link>
         </div>
       </div>
       <!-- end post -->
