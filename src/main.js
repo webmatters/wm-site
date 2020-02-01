@@ -41,6 +41,6 @@ export default function(Vue, { router, head, isClient }) {
 
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Open+Sans&display=swap',
+    href: 'https://fonts.googleapis.com/css?family=Roboto&display=swap',
   })
 }

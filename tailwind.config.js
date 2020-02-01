@@ -2,10 +2,10 @@ const { colors } = require('tailwindcss/defaultTheme')
 
 module.exports = {
   theme: {
-    fontFamily: { body: ['Open Sans'] },
+    fontFamily: { body: ['Roboto'] },
     extend: {
       colors: {
-        primary: '#3256a8',
+        primary: '#243e85',
         secondary: colors.gray[900],
         cta: '#ed8936',
       },

@@ -6,11 +6,7 @@
       <!-- Brand Logo -->
       <div>
         <g-link to="/">
-          <g-image
-            src="~/assets/img/brand.svg"
-            alt="Web Matters logo"
-            width="250"
-          />
+          <g-image src="~/assets/img/brand.svg" alt="Web Matters logo" width="250" />
         </g-link>
       </div>
       <!-- Mobile Menu Toggler -->
@@ -29,66 +25,40 @@
     <!-- Nav links -->
     <ul
       :class="isOpen ? 'block' : 'hidden'"
-      class="px-8 pb-4 md:flex md:items-center md:p-0 font-semibold text-xl"
+      class="px-8 pb-4 md:flex md:items-center md:p-0 font-semibold text-secondary text-xl"
     >
       <li>
-        <search-input class="block md:ml-6 my-3 sm:my-0" />
+        <search-input class="block md:ml-6 my-3 md:my-0" />
       </li>
       <li>
         <a
           v-if="$route.path === '/'"
           href="/#services"
           v-scroll-to="'#services'"
-          class="nav-link block md:ml-6 mt-3 sm:mt-0 text-primary"
-          >Services</a
-        >
-        <g-link
-          v-else
-          to="/#services"
-          class="nav-link block md:ml-6 mt-3 sm:mt-0 text-primary"
-        >
-          Services
-        </g-link>
+          class="nav-link block md:ml-6 mt-3 md:mt-0"
+        >Services</a>
+        <g-link v-else to="/#services" class="nav-link block md:ml-6 mt-3 md:mt-0">Services</g-link>
       </li>
       <li>
         <a
           v-if="$route.path === '/'"
           href="/#about"
           v-scroll-to="'#about'"
-          class="nav-link block md:ml-6 mt-3 sm:mt-0 text-primary "
-          >About</a
-        >
-        <g-link
-          v-else
-          to="/#about"
-          class="nav-link block md:ml-6 mt-3 sm:mt-0 text-primary "
-        >
-          About
-        </g-link>
+          class="nav-link block md:ml-6 mt-3 md:mt-0"
+        >About</a>
+        <g-link v-else to="/#about" class="nav-link block md:ml-6 mt-3 md:mt-0">About</g-link>
       </li>
       <li>
-        <g-link
-          to="/blog"
-          class="nav-link block md:ml-6 mt-3 sm:mt-0 text-primary "
-        >
-          Blog
-        </g-link>
+        <g-link to="/blog" class="nav-link block md:ml-6 mt-3 md:mt-0">Blog</g-link>
       </li>
       <li>
         <a
           v-if="$route.path === '/'"
           href="/#contact"
           v-scroll-to="'#contact'"
-          class="nav-link block md:ml-6 mt-3 sm:mt-0 text-primary "
-          >Contact</a
-        >
-        <g-link
-          v-else
-          to="/#about"
-          class="nav-link block md:ml-6 mt-3 sm:mt-0 text-primary "
-        >
-          Contact
-        </g-link>
+          class="nav-link block md:ml-6 mt-3 md:mt-0"
+        >Contact</a>
+        <g-link v-else to="/#about" class="nav-link block md:ml-6 mt-3 md:mt-0">Contact</g-link>
       </li>
     </ul>
   </header>
