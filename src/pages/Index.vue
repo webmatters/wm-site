@@ -5,9 +5,9 @@
       <!-- Hero Text -->
       <div class="container md:flex mx-auto mb-8 py-12 md:py-24">
         <div class="text-center md:w-1/2 md:text-left px-4 md:px-8">
-          <h1
-            class="tracking-tight leading-tight text-3xl md:text-4xl"
-          >Web Services to Propel Your Business</h1>
+          <h1 class="tracking-tight leading-tight text-3xl md:text-4xl">
+            Web Services to Propel Your Business
+          </h1>
           <h2 class="mt-4">
             Thoughtfully designed and meticulously developed apps guided by
             expert strategy. All reasonably priced for entrepreneurs.
@@ -17,19 +17,21 @@
               href="#"
               type="=button"
               class="bg-cta rounded-full text-white py-2 px-4 shadow-xl"
-            >Free Strategy Session</a>
+              >Free Strategy Session</a
+            >
           </div>
         </div>
         <!-- Hero Image -->
         <div class="mt-8 md:w-1/2">
-          <g-image src="~/assets/img/rocket-turtle.jpg" alt="Rocket turtle" />
+          <g-image src="~/assets/img/rocket-turtle.png" alt="Rocket turtle" />
         </div>
         <div class="text-center mt-20 md:hidden">
           <a
             href="#"
             type="=button"
             class="bg-cta rounded-full text-white py-2 px-4 inline-block"
-          >Free Strategy Session</a>
+            >Free Strategy Session</a
+          >
         </div>
       </div>
     </section>
