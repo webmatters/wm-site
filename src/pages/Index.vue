@@ -36,7 +36,7 @@
     <section id="services" class="bg-primary">
       <div class="container mx-auto text-center py-12 md:py-24 md:px-8 text-white">
         <h2 class="uppercase text-4xl tracking-wider font-light">Services</h2>
-        <services-matrix class="mt-12 md:mt-20" />
+        <services-matrix class="mt-12" />
       </div>
     </section>
 

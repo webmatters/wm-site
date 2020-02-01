@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col">
     <the-navbar />
-    <transition name="fade" appear>
+    <transition name="slide-fade" appear>
       <main class="flex-grow">
         <slot />
       </main>
@@ -28,6 +28,15 @@ export default {
 }
 
 .fade-enter {
+  opacity: 0;
+}
+
+.slide-fade-enter-active {
+  transition: all 0.5s ease;
+}
+
+.slide-fade-enter {
+  transform: translateX(10px);
   opacity: 0;
 }
 </style>
