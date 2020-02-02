@@ -5,8 +5,8 @@
     <div class="relative w-80">
       <input
         type="text"
-        placeholder="Search blog"
-        class="bg-background-form border border-gray-400 rounded-full px-4 pl-10 py-2 outline-none focus:border-primary w-80"
+        placeholder="Search Blog Posts"
+        class="bg-background-form border border-gray-400 rounded-full px-4 pl-10 py-1 outline-none text-xl focus:border-primary w-80"
         v-model="query"
         @input="softReset"
         @keyup="performSearch"
@@ -37,14 +37,12 @@
         class="absolute top-0 right-0 text-2xl mr-3 cursor-pointer text-primary hover:text-gray-800"
         style="top:2px;"
         @click="reset"
-      >
-        &times;
-      </div>
+      >&times;</div>
     </div>
     <transition name="fade">
       <div
         v-if="query.length > 0 && searchResultsVisible"
-        class="normal-case absolute border left-0 right-0 w-108 text-left mb-4 mt-2 rounded-lg shadow overflow-hidden z-10 overflow-y-auto"
+        class="absolute border left-0 right-0 w-108 text-left mb-4 mt-2 rounded-lg shadow overflow-hidden z-20 overflow-y-auto"
         style="max-height: 32rem"
       >
         <div class="flex flex-col" ref="results">
@@ -53,23 +51,22 @@
             :key="index"
             :href="post.item.path"
             @click="reset"
-            class="bg-background-form border-b border-gray-400 text-xl cursor-pointer p-4 search-hover"
+            class="bg-white border-b border-gray-400 text-xl text-primary cursor-pointer p-4 hover:bg-blue-100"
             :class="{ 'search-highlighted': index === highlightedIndex }"
           >
             {{ post.item.title }}
-            <span class="block font-normal text-secondary text-sm my-1">
-              {{ post.item.summary }}
-            </span>
+            <span
+              class="block font-normal text-secondary text-sm my-1"
+            >{{ post.item.summary }}</span>
           </a>
 
           <div
             v-if="results.length === 0"
-            class="bg-background-form font-normal w-full border-b cursor-pointer p-4"
+            class="bg-white font-normal w-full border-b cursor-pointer p-4"
           >
             <p class="my-0">
               No results for '
-              <strong>{{ query }}</strong
-              >'
+              <strong>{{ query }}</strong>'
             </p>
           </div>
         </div>

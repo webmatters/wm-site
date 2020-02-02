@@ -1,9 +1,11 @@
 <template>
   <div class="flex flex-col">
     <the-navbar />
-    <div class="flex-grow">
-      <slot />
-    </div>
+    <transition name="slide-fade" appear>
+      <main class="flex-grow">
+        <slot />
+      </main>
+    </transition>
     <the-footer />
   </div>
 </template>
@@ -20,4 +22,21 @@ export default {
 }
 </script>
 
-<style src="../css/main.css" />
+<style>
+.fade-enter-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.slide-fade-enter-active {
+  transition: all 0.5s ease;
+}
+
+.slide-fade-enter {
+  transform: translateX(10px);
+  opacity: 0;
+}
+</style>

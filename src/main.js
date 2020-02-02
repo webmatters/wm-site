@@ -2,6 +2,8 @@ import DefaultLayout from '~/layouts/Default.vue'
 import VueScrollTo from 'vue-scrollto'
 import VueFuse from 'vue-fuse'
 
+require('~/css/main.css')
+
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
@@ -41,6 +43,7 @@ export default function(Vue, { router, head, isClient }) {
 
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Roboto&display=swap',
+    href:
+      'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap',
   })
 }

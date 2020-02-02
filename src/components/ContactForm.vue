@@ -1,12 +1,9 @@
 <template>
-  <div class="pt-16 mx-auto text-xl pb-4 text-white">
-    <h2 class="font-bold mb-6 text-center">
-      Get a Free 30-minute Strategy Session
-    </h2>
-    <div class="mb-12 text-center">
-      We'll work with you to understand the problem you're trying to solve and
-      recommend a high-level strategy that leverages the power of Web.
-    </div>
+  <div class="pt-16 mx-auto pb-4 px-4 text-white">
+    <h2 class="font-bold mb-6 text-xl text-center">Get a Free 30-minute Strategy Session</h2>
+    <div
+      class="mb-12 text-center"
+    >We'll walk you through our discovery process to better understand your needs. We'll then recommend a web strategy to achieve your goals.</div>
 
     <div class="text-lg sm:text-lg mb-16">
       <form
@@ -41,9 +38,7 @@
           </div>
 
           <div class="w-full px-4 md:w-1/2">
-            <label class="block text-copy-primary mb-2" for="email"
-              >Email Address</label
-            >
+            <label class="block text-copy-primary mb-2" for="email">Email Address</label>
 
             <input
               type="email"
@@ -58,9 +53,7 @@
         </div>
 
         <div class="w-full mb-12">
-          <label class="block text-copy-primary mb-2" for="message"
-            >Message</label
-          >
+          <label class="block text-copy-primary mb-2" for="message">Message</label>
 
           <textarea
             id="message"
@@ -77,9 +70,7 @@
           <button
             type="submit"
             class="block bg-primary hover:primary text-white text-sm font-semibold tracking-wide uppercase shadow rounded cursor-pointer px-6 py-3"
-          >
-            Submit
-          </button>
+          >Submit</button>
         </div>
       </form>
     </div>
