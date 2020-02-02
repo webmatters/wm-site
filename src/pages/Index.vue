@@ -11,11 +11,13 @@
           <h2
             class="mt-4 text-xl text-gray-800"
           >Poorly-designed web initiatives do more harm than good. We apply battle-tested technology and business strategies to accelerate your growth.</h2>
-          <button
-            type="button"
-            class="hidden md:inline-block mt-16 btn-grad rounded-full text-white py-3 px-6"
-          >
-            <a href="#">Free Strategy Session</a>
+          <button type="button" class="hidden md:inline-block mt-16 btn-grad rounded-full">
+            <a
+              v-if="$route.path === '/'"
+              href="#/contact"
+              v-scroll-to="'#contact'"
+              class="btn-grad rounded-full text-white text-xl py-2 px-6 inline-block"
+            >Free Strategy Session</a>
           </button>
         </div>
         <!-- Hero Image -->
@@ -24,8 +26,9 @@
         </div>
         <div class="text-center mt-20 md:hidden">
           <a
-            href="#"
-            type="=button"
+            v-if="$route.path === '/'"
+            href="#/contact"
+            v-scroll-to="'#contact'"
             class="btn-grad rounded-full text-white py-2 px-4 inline-block"
           >Free Strategy Session</a>
         </div>
@@ -36,7 +39,7 @@
     <section id="services" class="bg-primary">
       <div class="container mx-auto text-center py-12 md:py-24 md:px-8 text-white">
         <h2 class="uppercase text-4xl tracking-wider font-light">Services</h2>
-        <services-matrix class="mt-12" />
+        <services-matrix class="mt-12 md:mt-16" />
       </div>
     </section>
 
