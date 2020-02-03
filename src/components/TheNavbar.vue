@@ -23,44 +23,46 @@
     </div>
 
     <!-- Nav links -->
-    <ul
-      :class="isOpen ? 'block' : 'hidden'"
-      class="px-8 pb-4 md:flex md:items-center md:p-0 text-secondary text-2xl"
-    >
-      <li>
-        <search-input class="block md:ml-6 my-3 md:my-0" />
-      </li>
-      <li>
-        <a
-          v-if="$route.path === '/'"
-          href="/#services"
-          v-scroll-to="'#services'"
-          class="nav-link block md:ml-6 mt-3 md:mt-0 md:ml-8"
-        >Services</a>
-        <g-link v-else to="/#services" class="nav-link block md:ml-6 mt-3 md:mt-0">Services</g-link>
-      </li>
-      <li>
-        <a
-          v-if="$route.path === '/'"
-          href="/#about"
-          v-scroll-to="'#about'"
-          class="nav-link block md:ml-6 mt-3 md:mt-0"
-        >About</a>
-        <g-link v-else to="/#about" class="nav-link block md:ml-6 mt-3 md:mt-0">About</g-link>
-      </li>
-      <li>
-        <g-link to="/blog" class="nav-link block md:ml-6 mt-3 md:mt-0">Blog</g-link>
-      </li>
-      <li>
-        <a
-          v-if="$route.path === '/'"
-          href="/#contact"
-          v-scroll-to="'#contact'"
-          class="nav-link block md:ml-6 mt-3 md:mt-0"
-        >Contact</a>
-        <g-link v-else to="/#about" class="nav-link block md:ml-6 mt-3 md:mt-0">Contact</g-link>
-      </li>
-    </ul>
+    <transition name="fade">
+      <ul
+        :class="isOpen ? 'block' : 'hidden'"
+        class="px-8 pb-4 md:flex md:items-center md:p-0 text-secondary text-2xl"
+      >
+        <li>
+          <search-input class="block md:ml-6 my-3 md:my-0" />
+        </li>
+        <li>
+          <a
+            v-if="$route.path === '/'"
+            href="/#services"
+            v-scroll-to="'#services'"
+            class="nav-link block md:ml-6 mt-3 md:mt-0 md:ml-8"
+          >Services</a>
+          <g-link v-else to="/#services" class="nav-link block md:ml-6 mt-3 md:mt-0">Services</g-link>
+        </li>
+        <li>
+          <a
+            v-if="$route.path === '/'"
+            href="/#about"
+            v-scroll-to="'#about'"
+            class="nav-link block md:ml-6 mt-3 md:mt-0"
+          >Why Web Matters?</a>
+          <g-link v-else to="/#about" class="nav-link block md:ml-6 mt-3 md:mt-0">Why Web Matters?</g-link>
+        </li>
+        <li>
+          <g-link to="/blog" class="nav-link block md:ml-6 mt-3 md:mt-0">Blog</g-link>
+        </li>
+        <li>
+          <a
+            v-if="$route.path === '/'"
+            href="/#contact"
+            v-scroll-to="'#contact'"
+            class="nav-link block md:ml-6 mt-3 md:mt-0"
+          >Contact</a>
+          <g-link v-else to="/#about" class="nav-link block md:ml-6 mt-3 md:mt-0">Contact</g-link>
+        </li>
+      </ul>
+    </transition>
   </header>
 </template>
 
@@ -114,5 +116,11 @@ export default {
   border-width: 0 0 2px;
   border-style: solid;
   border-color: #ed8936;
+}
+.fade-enter-active {
+  transition: opacity 2s;
+}
+.fade-enter {
+  opacity: 0;
 }
 </style>

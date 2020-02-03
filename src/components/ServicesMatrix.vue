@@ -1,7 +1,10 @@
 <template>
   <div>
-    <div class="md:flex text-center">
-      <div class="md:w-1/3 flex flex-col items-center justify-center md:mr-8 mt-12">
+    <div
+      class="mx-4 md:mx-8"
+    >Web Matters offers a comprehensive suite of web services aimed at helping you succeed. We can manage your entire web presence including strategy, development, and continuous improvement or fulfill a specific need such as building an app or creating analytics dashboards to help manage your business.</div>
+    <div class="md:flex text-center md:mt-8">
+      <div class="md:w-1/3 flex flex-col items-center justify-center md:mr-8 mt-8">
         <div>
           <monitor-icon :size="48" />
         </div>
@@ -10,7 +13,7 @@
           class="px-4"
         >Your website needs to grab visitors' attention and guide them toward becoming a customer. Strategic design, personality, user flow, SEO, analytics, functionality, speed, reliability. These are must-have requirements for your site.</div>
       </div>
-      <div class="md:w-1/3 flex flex-col items-center justify-center md:mr-8 mt-12">
+      <div class="md:w-1/3 flex flex-col items-center justify-center md:mr-8 mt-8">
         <div>
           <monitor-cellphone-icon :size="48" />
         </div>
@@ -19,7 +22,7 @@
           class="px-4"
         >Do you have an idea for an app that meets a market need? It must have great UX, support mobile devices, and be fast, reliable, & scalable. Leveraging modern frameworks helps achieve these objectives and get to market quickly.</div>
       </div>
-      <div class="md:w-1/3 flex flex-col items-center justify-center mt-12">
+      <div class="md:w-1/3 flex flex-col items-center justify-center mt-8">
         <div>
           <image-edit-icon :size="48" />
         </div>
@@ -29,8 +32,8 @@
         >Your brand is your company's identity. It helps determine whether someone will do business with you. Your selection of colors, typography, logo, business cards, letterhead, and other web and print marketing assets creates your brand.</div>
       </div>
     </div>
-    <div class="md:flex text-center md:mt-20">
-      <div class="md:w-1/3 flex flex-col items-center justify-center md:mr-8 mt-12">
+    <div class="md:flex text-center md:mt-16">
+      <div class="md:w-1/3 flex flex-col items-center justify-center md:mr-8 mt-8">
         <div>
           <cash-multiple-icon :size="48" />
         </div>
@@ -39,7 +42,7 @@
           class="px-4"
         >The web provides many effective and measurable options to get users to your site: email, Google Ads, Facebook, and many others. The important thing is to determine what provides the best return for your audience.</div>
       </div>
-      <div class="md:w-1/3 flex flex-col items-center justify-center md:mr-8 mt-12">
+      <div class="md:w-1/3 flex flex-col items-center justify-center md:mr-8 mt-8">
         <div>
           <strategy-icon :size="48" />
         </div>
@@ -48,7 +51,7 @@
           class="px-4"
         >Strategy is not abstract. It's practical, utilizing well-tested processes offered by frameworks like Pragmatic. Without a winning strategy based on an understanding of buyers, markets, and competitors, nothing else matters.</div>
       </div>
-      <div class="md:w-1/3 flex flex-col items-center justify-center mt-12">
+      <div class="md:w-1/3 flex flex-col items-center justify-center mt-8">
         <div>
           <chart-bar-icon :size="48" />
         </div>

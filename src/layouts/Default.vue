@@ -26,7 +26,6 @@ export default {
 .fade-enter-active {
   transition: opacity 0.5s;
 }
-
 .fade-enter {
   opacity: 0;
 }
@@ -34,7 +33,6 @@ export default {
 .slide-fade-enter-active {
   transition: all 0.5s ease;
 }
-
 .slide-fade-enter {
   transform: translateX(10px);
   opacity: 0;
