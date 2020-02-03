@@ -46,8 +46,8 @@
             href="/#about"
             v-scroll-to="'#about'"
             class="nav-link block md:ml-6 mt-3 md:mt-0"
-          >About</a>
-          <g-link v-else to="/#about" class="nav-link block md:ml-6 mt-3 md:mt-0">About</g-link>
+          >Why Web Matters?</a>
+          <g-link v-else to="/#about" class="nav-link block md:ml-6 mt-3 md:mt-0">Why Web Matters?</g-link>
         </li>
         <li>
           <g-link to="/blog" class="nav-link block md:ml-6 mt-3 md:mt-0">Blog</g-link>

@@ -1,7 +1,10 @@
 <template>
   <div>
-    <div class="md:flex text-center">
-      <div class="md:w-1/3 flex flex-col items-center justify-center md:mr-8">
+    <div
+      class="mx-4 md:mx-8"
+    >Web Matters offers a comprehensive suite of web services aimed at helping you succeed. We can manage your entire web presence including strategy, development, and continuous improvement or fulfill a specific need such as building an app or creating analytics dashboards to help manage your business.</div>
+    <div class="md:flex text-center md:mt-8">
+      <div class="md:w-1/3 flex flex-col items-center justify-center md:mr-8 mt-8">
         <div>
           <monitor-icon :size="48" />
         </div>
