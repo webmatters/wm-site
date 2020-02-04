@@ -14,10 +14,10 @@
           <button type="button" class="hidden md:inline-block mt-16 btn-grad rounded-full">
             <a
               v-if="$route.path === '/'"
-              href="#/contact"
-              v-scroll-to="'#contact'"
+              href="#/about"
+              v-scroll-to="'#about'"
               class="btn-grad rounded-full text-white text-xl py-2 px-6 inline-block"
-            >Free Strategy Session</a>
+            >Why Web Matters?</a>
           </button>
         </div>
         <!-- Hero Image -->
@@ -27,10 +27,10 @@
         <div class="text-center mt-20 md:hidden">
           <a
             v-if="$route.path === '/'"
-            href="#/contact"
-            v-scroll-to="'#contact'"
+            href="#/about"
+            v-scroll-to="'#about'"
             class="btn-grad rounded-full text-white py-2 px-4 inline-block"
-          >Free Strategy Session</a>
+          >Why Web Matters?</a>
         </div>
       </div>
     </section>
