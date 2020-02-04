@@ -36,30 +36,42 @@
             v-if="$route.path === '/'"
             href="/#services"
             v-scroll-to="'#services'"
-            class="nav-link block md:ml-6 mt-3 md:mt-0 md:ml-8"
+            class="nav-link hover:text-primary block md:ml-6 mt-3 md:mt-0 md:ml-8"
           >Services</a>
-          <g-link v-else to="/#services" class="nav-link block md:ml-6 mt-3 md:mt-0">Services</g-link>
+          <g-link
+            v-else
+            to="/#services"
+            class="nav-link hover:text-primary block md:ml-6 mt-3 md:mt-0"
+          >Services</g-link>
         </li>
         <li>
           <a
             v-if="$route.path === '/'"
             href="/#about"
             v-scroll-to="'#about'"
-            class="nav-link block md:ml-6 mt-3 md:mt-0"
-          >Why Web Matters?</a>
-          <g-link v-else to="/#about" class="nav-link block md:ml-6 mt-3 md:mt-0">Why Web Matters?</g-link>
+            class="nav-link hover:text-primaryblock md:ml-6 mt-3 md:mt-0"
+          >About</a>
+          <g-link
+            v-else
+            to="/#about"
+            class="nav-link hover:text-primary block md:ml-6 mt-3 md:mt-0"
+          >About</g-link>
         </li>
         <li>
-          <g-link to="/blog" class="nav-link block md:ml-6 mt-3 md:mt-0">Blog</g-link>
+          <g-link to="/blog" class="nav-link hover:text-primary block md:ml-6 mt-3 md:mt-0">Blog</g-link>
         </li>
         <li>
           <a
             v-if="$route.path === '/'"
             href="/#contact"
             v-scroll-to="'#contact'"
-            class="nav-link block md:ml-6 mt-3 md:mt-0"
-          >Contact</a>
-          <g-link v-else to="/#about" class="nav-link block md:ml-6 mt-3 md:mt-0">Contact</g-link>
+            class="block btn-grad text-lg rounded-full text-white py-2 px-4 md:ml-6 mt-3 md:mt-0 uppercase"
+          >Free Consult</a>
+          <g-link
+            v-else
+            to="/#contact"
+            class="block btn-grad text-lg rounded-full text-white py-2 px-4 md:ml-6 mt-3 md:mt-0 uppercase"
+          >Free Consult</g-link>
         </li>
       </ul>
     </transition>
@@ -105,7 +117,7 @@ export default {
   border-style: solid;
   border-color: #ed8936;
 }
-.nav-link:focus:after {
+.nav-link:focus:active:after {
   content: '';
 
   width: 100%;
@@ -116,6 +128,9 @@ export default {
   border-width: 0 0 2px;
   border-style: solid;
   border-color: #ed8936;
+}
+.btn-grad {
+  background-image: linear-gradient(to right, #ff512f 0%, #f09819 100%);
 }
 .fade-enter-active {
   transition: opacity 2s;
