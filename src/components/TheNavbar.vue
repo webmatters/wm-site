@@ -1,6 +1,6 @@
 `<template>
   <header>
-    <div class="container mx-auto p-4 md:px-0 md:flex md:justify-between md:items-center">
+    <div class="container mx-auto p-4 md:flex md:justify-between md:items-center">
       <!-- Brand Logo -->
       <div>
         <g-link to="/">
@@ -8,7 +8,7 @@
         </g-link>
       </div>
       <!-- Email address -->
-      <div class="mt-6 flex items-center">
+      <div class="mt-6 md:mt-0 flex items-center">
         <email-icon class="text-primary" />
         <div class="ml-4">
           <div class="font-semibold">Email</div>
@@ -16,7 +16,7 @@
         </div>
       </div>
       <!-- Call to Action button -->
-      <div class="mt-4">
+      <div class="mt-4 md:mt-0">
         <a
           v-if="$route.path === '/'"
           href="/#contact"
@@ -49,7 +49,7 @@
     <!-- End Mobile Menu Toggler -->
 
     <div class="md:bg-secondary">
-      <div class="container mx-auto md:flex md:items-center md:justify-between">
+      <div class="container mx-auto px-4 md:flex md:items-center md:justify-between">
         <ul
           :class="isOpen ? 'block' : 'hidden'"
           class="md:flex md:items-center p-4 md:px-0 text-secondary md:text-gray-300 text-lg"

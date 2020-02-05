@@ -3,7 +3,7 @@
     <!-- Hero -->
     <section class="hero-img">
       <!-- Hero Text -->
-      <div class="container md:flex mx-auto md:py-16 text-white">
+      <div class="container md:flex md:px-4 mx-auto md:py-16 text-white">
         <div class="py-48 text-center md:w-1/2 md:text-left px-4 md:px-0 md:py-8">
           <h1
             class="leading-tight text-4xl md:text-5xl font-semibold"
@@ -24,7 +24,7 @@
     </section>
 
     <!-- About -->
-    <section id="about" class="md:py-24">
+    <section id="about" class="py-12 md:py-24">
       <div class="container mx-auto text-center">
         <h2 class="uppercase text-4xl text-primary">Why Web Matters?</h2>
         <why-web-matters class="mt-12" />
@@ -71,8 +71,8 @@ export default {
 .hero-img {
   background-image: linear-gradient(
       to bottom,
-      rgba(36, 62, 133, 0.4),
-      rgba(36, 62, 133, 0.4)
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
     ),
     url(~@/assets/img/hero.jpg);
   background-position: center;
