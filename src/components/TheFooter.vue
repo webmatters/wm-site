@@ -50,13 +50,15 @@
                 <li>
                   <a
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2"
-                    href="#"
+                    href="/#about"
+                    v-scroll-to="'#about'"
                   >About Us</a>
                 </li>
                 <li>
                   <a
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2"
-                    href="#"
+                    href="/#services"
+                    v-scroll-to="'#services'"
                   >Services</a>
                 </li>
               </ul>

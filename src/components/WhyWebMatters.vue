@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col text-gray-700">
-    <div class="md:flex flex-row md:my-12 items-center text-center">
+  <div class="flex flex-col md:mt-16 text-gray-700">
+    <div class="md:flex flex-row items-center text-center">
       <div class="md:w-1/2 mx-4 md:mx-8 md:text-left">
         <h3 class="text-2xl font-semibold text-primary">We Serve Entrepreneurs</h3>
         <div
@@ -52,79 +52,79 @@
 
     <div class="md:mt-12">
       <div class="mt-8 md:mt-0 mx-4">
-        <h3 class="text-2xl font-semibold text-primary">The Best Tools</h3>
+        <h3 class="text-2xl font-semibold text-primary">Modern Web Technologies</h3>
         <div
           class="mt-2"
         >Web development advances come fast and furious. That's why we carefully research and experiment with a variety of technologies and frameworks for design, development, marketing, and managed hosting. As a result, we have a big, modern toolbox based on cutting-edge technologies and business principles. This allows us to build sites and apps with more advanced features in less time and for less money.</div>
       </div>
       <!-- Logo container 1 -->
-      <div class="hidden md:block flex flex-col md:flex-row items-center md:p-8">
+      <div class="hidden md:block md:flex-row items-center md:pt-12">
         <g-image
           src="~/assets/logos/python.png"
           alt="python logo"
-          class="p-8 md:w-1/6 md:p-12 md:w-16 md:inline-block"
+          class="md:w-1/6 md:px-8 md:w-16 md:inline-block"
         />
         <g-image
           src="~/assets/logos/aws.png"
           alt="AWS logo"
-          class="p-8 md:w-1/6 md:p-12 md:w-16 md:inline-block"
+          class="md:w-1/6 md:px-8 md:w-16 md:inline-block"
         />
         <g-image
           src="~/assets/logos/nodejs.png"
           alt="Node logo"
-          class="p-8 md:w-1/6 md:p-12 md:w-16 md:inline-block"
+          class="md:w-1/6 md:px-8 md:w-16 md:inline-block"
         />
 
         <g-image
           src="~/assets/logos/mongodb.png"
           alt="Mongo logo"
-          class="p-8 md:w-1/6 md:p-12 md:w-16 md:inline-block"
+          class="md:w-1/6 md:px-8 md:w-16 md:inline-block"
         />
 
         <g-image
           src="~/assets/logos/django.png"
           alt="Django logo"
-          class="p-8 md:w-1/6 md:p-12 md:w-16 md:inline-block"
+          class="md:w-1/6 md:px-8 md:w-16 md:inline-block"
         />
         <g-image
           src="~/assets/logos/postgresql.png"
           alt="Postgres logo"
-          class="p-8 md:w-1/6 md:p-12 md:w-16 md:inline-block"
+          class="md:w-1/6 md:px-8 md:w-16 md:inline-block"
         />
       </div>
       <!-- Logo container 2 -->
-      <div class="hidden md:block flex flex-col md:flex-row items-center md:p-8 md:pt-0">
+      <div class="hidden md:block flex flex-col md:flex-row items-center md:pb-8 md:pt-12">
         <g-image
           src="~/assets/logos/vuejs.png"
           alt="VueJS logo"
-          class="p-5 md:w-1/6 md:p-12 md:w-16 md:inline-block"
+          class="md:w-1/6 md:px-8 md:w-16 md:inline-block"
         />
         <g-image
           src="~/assets/logos/netlify.jpg"
           alt="Netlify logo"
-          class="p-5 md:w-1/6 md:p-12 md:w-16 md:inline-block"
+          class="md:w-1/6 md:px-8 md:w-16 md:inline-block"
         />
 
         <g-image
           src="~/assets/logos/react.png"
           alt="React logo"
-          class="p-5 md:w-1/6 md:p-12 md:w-16 md:inline-block"
+          class="md:w-1/6 md:px-8 md:w-16 md:inline-block"
         />
 
         <g-image
           src="~/assets/logos/Tailwind.png"
           alt="Tailwind logo"
-          class="p-5 md:w-1/6 md:p-12 md:w-16 md:inline-block"
+          class="md:w-1/6 md:px-8 md:w-16 md:inline-block"
         />
         <g-image
           src="~/assets/logos/nuxtjs.png"
           alt="NuxtJS logo"
-          class="p-5 md:w-1/6 md:p-12 md:w-16 md:inline-block"
+          class="md:w-1/6 md:px-8 md:w-16 md:inline-block"
         />
         <g-image
           src="~/assets/logos/gridsome.svg"
           alt="Gridsome logo"
-          class="p-5 md:w-1/6 md:p-12 md:w-16 md:inline-block"
+          class="md:w-1/6 md:px-8 md:w-16 md:inline-block"
         />
       </div>
     </div>

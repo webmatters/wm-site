@@ -1,6 +1,6 @@
 ---
-title: The Origins of Web Matters
-path: /the-origins-of-web-matters
+title: The Origin of Web Matters
+path: /the-origin-of-web-matters
 date: 2020-02-04
 summary: Web and mobile technologies provide more opportunities than ever to transform your ideas into a viable business that provides you with autonomy and financial independence. Web Matters was born from these same principles with the goal of promoting entrepreneurship and leveraging the power of the Web to help people bring their dreams to life.
 tags: ['entrepreneurship', 'Web Matters']
