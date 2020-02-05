@@ -88,6 +88,6 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: fixed;
-  height: 50vh;
+  min-height: 50vh;
 }
 </style>
