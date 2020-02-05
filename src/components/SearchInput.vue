@@ -2,11 +2,11 @@
   <div class="relative">
     <search-focus @keyup="focusSearch"></search-focus>
 
-    <div class="relative w-80">
+    <div class="relative">
       <input
         type="text"
-        placeholder="Search Blog Posts"
-        class="bg-background-form border border-gray-400 rounded-full px-4 pl-10 py-1 outline-none text-xl focus:border-primary w-80"
+        placeholder="Search"
+        class="border bg-primary border-gray-500 rounded-full px-4 pl-10 py-1 outline-none text-xl focus:border-gray-500 w-56"
         v-model="query"
         @input="softReset"
         @keyup="performSearch"
@@ -34,7 +34,7 @@
       </div>
       <div
         v-if="query.length > 0"
-        class="absolute top-0 right-0 text-2xl mr-3 cursor-pointer text-primary hover:text-gray-800"
+        class="absolute top-0 right-0 text-2xl mr-3 cursor-pointer"
         style="top:2px;"
         @click="reset"
       >&times;</div>
