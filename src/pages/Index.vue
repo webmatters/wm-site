@@ -4,7 +4,7 @@
     <section class="hero-img">
       <!-- Hero Text -->
       <div class="container md:flex md:px-4 mx-auto md:py-16 text-white">
-        <div class="py-48 text-center md:w-1/2 md:text-left px-4 md:px-0 md:py-8">
+        <div class="py-32 text-center md:w-1/2 md:text-left px-4 md:px-0 md:py-8">
           <h1
             class="leading-tight text-4xl md:text-5xl font-semibold"
           >Making the Web Work for Entrepreneurs</h1>
@@ -14,8 +14,8 @@
           <button type="button" class="mt-16 btn-grad rounded-full">
             <a
               v-if="$route.path === '/'"
-              href="#/about"
-              v-scroll-to="'#about'"
+              href="#/services"
+              v-scroll-to="'#services'"
               class="btn-grad rounded-full text-white text py-3 px-6 inline-block"
             >Our Services</a>
           </button>
@@ -78,6 +78,7 @@ export default {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: fixed;
   height: 50vh;
 }
 </style>
