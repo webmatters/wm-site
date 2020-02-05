@@ -965,6 +965,14 @@
     log-update "^2.3.0"
     p-map "^1.2.0"
 
+"@inotom/vue-go-top@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@inotom/vue-go-top/-/vue-go-top-1.2.0.tgz#9723e18eb10b2e6fb5d5b97b8480a54e996f8bb5"
+  integrity sha512-tLwI2Z2+MjzsaaU8AWylTRK3wel9t4m+EWsRMoOnSmPuFFTrKtgFG+RDuUbAgsaW+zR9pG7MMzyiL07qdie4MA==
+  dependencies:
+    sweet-scroll "4.0.0"
+    throttle-debounce "2.1.0"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -8963,6 +8971,11 @@ svgo@^1.0.0:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
+sweet-scroll@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/sweet-scroll/-/sweet-scroll-4.0.0.tgz#1f546157eb9754bb473780bb89546b1ca1ad9a25"
+  integrity sha512-mR6fRsAQANtm3zpzhUE73KAOt2aT4ZsWzNSggiEsSqdO6Zh4gM7ioJG81EngrZEl0XAc3ZvzEfhxggOoEBc8jA==
+
 table@^5.2.3:
   version "5.4.6"
   resolved "https://registry.yarnpkg.com/table/-/table-5.4.6.tgz#1292d19500ce3f86053b05f0e8e7e4a3bb21079e"
@@ -9097,6 +9110,11 @@ text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
+
+throttle-debounce@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/throttle-debounce/-/throttle-debounce-2.1.0.tgz#257e648f0a56bd9e54fe0f132c4ab8611df4e1d5"
+  integrity sha512-AOvyNahXQuU7NN+VVvOOX+uW6FPaWdAOdRP5HfwYxAfCzXTFKRMoIMk+n+po318+ktcChx+F1Dd91G3YHeMKyg==
 
 through2@^2.0.0:
   version "2.0.5"
