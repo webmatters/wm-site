@@ -3,7 +3,7 @@
     <h2 class="font-bold mb-6 text-xl text-center">Get a Free 30-minute Strategy Session</h2>
     <div
       class="mb-12 text-center"
-    >We'll walk you through our discovery process to better understand your needs. We'll then recommend a web strategy to achieve your goals.</div>
+    >We'll walk through our discovery process to better understand your needs and recommend a web strategy to achieve your goals.</div>
 
     <div class="text-lg sm:text-lg mb-16">
       <form

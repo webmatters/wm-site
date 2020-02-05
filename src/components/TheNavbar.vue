@@ -1,8 +1,6 @@
 `<template>
-  <header
-    class="container mx-auto bg-white md:flex md:justify-between md:px-8 md:py-6 md:items-center"
-  >
-    <div class="p-4">
+  <header>
+    <div class="container mx-auto p-4 md:px-0 md:flex md:justify-between md:items-center">
       <!-- Brand Logo -->
       <div>
         <g-link to="/">
@@ -14,7 +12,7 @@
         <email-icon class="text-primary" />
         <div class="ml-4">
           <div class="font-semibold">Email</div>
-          <div class="text-gray-700 text-sm">andrew.smith@webmatters.io</div>
+          <div class="text-gray-700 text-sm">info@webmatters.io</div>
         </div>
       </div>
       <!-- Call to Action button -->
@@ -34,8 +32,7 @@
     </div>
     <!-- End pre-Navbar section -->
 
-    <div class="flex items-center bg-primary justify-between px-4 py-6 md:p-0">
-      <!-- Mobile Menu Toggler -->
+    <div class="flex items-center bg-primary justify-between px-4 py-4 md:p-0">
       <div class="md:hidden flex items-center justify-between">
         <button
           @click="isOpen = !isOpen"
@@ -47,55 +44,68 @@
         </button>
         <div class="ml-2 uppercase text-xl text-gray-400">Menu</div>
       </div>
-      <search-input class="md:ml-6 md:my-0 text-gray-400" />
+      <search-input class="md:hidden text-gray-400" />
     </div>
+    <!-- End Mobile Menu Toggler -->
 
-    <!-- Nav links -->
-    <transition name="fade">
-      <ul
-        :class="isOpen ? 'block' : 'hidden'"
-        class="px-8 md:flex md:items-center md:p-0 text-secondary text-lg"
-      >
-        <li class="mt-4">
-          <a
-            v-if="$route.path === '/'"
-            href="/#services"
-            v-scroll-to="'#services'"
-            class="nav-link hover:text-primary block md:mt-0 md:ml-8"
-          >Services</a>
-          <g-link v-else to="/#services" class="nav-link hover:text-primary block md:mt-0">Services</g-link>
-        </li>
-        <li class="mt-2">
-          <a
-            v-if="$route.path === '/'"
-            href="/#about"
-            v-scroll-to="'#about'"
-            class="nav-link hover:text-primaryblock md:ml-6 md:mt-0"
-          >About</a>
-          <g-link
-            v-else
-            to="/#about"
-            class="nav-link hover:text-primary block md:ml-6 md:mt-0"
-          >About</g-link>
-        </li>
-        <li class="mt-2">
-          <g-link to="/blog" class="nav-link hover:text-primary block md:ml-6 md:mt-0">Blog</g-link>
-        </li>
-        <li class="mt-2">
-          <a
-            v-if="$route.path === '/'"
-            href="/#contact"
-            v-scroll-to="'#contact'"
-            class="nav-link hover:text-primary block md:ml-6 md:mt-0"
-          >Contact</a>
-          <g-link
-            v-else
-            to="/#contact"
-            class="nav-link hover:text-primary block md:ml-6 md:mt-0"
-          >Contact</g-link>
-        </li>
-      </ul>
-    </transition>
+    <div class="md:bg-secondary">
+      <div class="container mx-auto md:flex md:items-center md:justify-between">
+        <ul
+          :class="isOpen ? 'block' : 'hidden'"
+          class="md:flex md:items-center p-4 md:px-0 text-secondary md:text-gray-300 text-lg"
+        >
+          <li class="mt-2">
+            <a
+              v-if="$route.path === '/'"
+              href="/#services"
+              v-scroll-to="'#services'"
+              class="nav-link md:hover:text-white md:mt-0"
+            >Services</a>
+            <g-link
+              v-else
+              to="/#services"
+              class="nav-link hover:text-primary md:hover:text-white md:mt-0"
+            >Services</g-link>
+          </li>
+          <li class="mt-2">
+            <a
+              v-if="$route.path === '/'"
+              href="/#about"
+              v-scroll-to="'#about'"
+              class="nav-link hover:text-primary md:hover:text-white md:ml-6 md:mt-0"
+            >About</a>
+            <g-link
+              v-else
+              to="/#about"
+              class="nav-link hover:text-primary md:hover:text-white md:ml-6 md:mt-0"
+            >About</g-link>
+          </li>
+          <li class="mt-2">
+            <g-link
+              to="/blog"
+              class="nav-link hover:text-primary md:hover:text-white md:ml-6 md:mt-0"
+            >Blog</g-link>
+          </li>
+          <li class="mt-2">
+            <a
+              v-if="$route.path === '/'"
+              href="/#contact"
+              v-scroll-to="'#contact'"
+              class="nav-link hover:text-primary md:hover:text-white md:ml-6 md:mt-0"
+            >Contact</a>
+            <g-link
+              v-else
+              to="/#contact"
+              class="nav-link hover:text-primary md:hover:text-white md:ml-6 md:mt-0"
+            >Contact</g-link>
+          </li>
+        </ul>
+        <search-input
+          class="hidden md:inline-block md:text-gray-300 md:bg-secondary md:hover:text-white"
+        />
+      </div>
+      <!-- End Navbar -->
+    </div>
   </header>
 </template>
 
@@ -121,44 +131,7 @@ export default {
 </script>
 
 <style scoped>
-.nav-link {
-  text-decoration: none;
-  position: relative;
-}
-.nav-link:focus {
-  color: #1a202c;
-}
-.nav-link:hover:after {
-  content: '';
-
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-
-  border-width: 0 0 2px;
-  border-style: solid;
-  border-color: #ed8936;
-}
-.nav-link:focus:active:after {
-  content: '';
-
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-
-  border-width: 0 0 2px;
-  border-style: solid;
-  border-color: #ed8936;
-}
 .btn-grad {
   background-image: linear-gradient(to right, #ff512f 0%, #f09819 100%);
-}
-.fade-enter-active {
-  transition: opacity 2s;
-}
-.fade-enter {
-  opacity: 0;
 }
 </style>
