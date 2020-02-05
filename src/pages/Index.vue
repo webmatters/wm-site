@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <go-top bg-color="#243e85"></go-top>
+    <go-top bg-color="#4a5568" :size="50"></go-top>
     <section class="hero-img">
       <div class="container md:flex md:px-4 mx-auto md:py-16 text-white">
         <div
