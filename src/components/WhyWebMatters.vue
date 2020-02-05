@@ -50,8 +50,8 @@
       <hr class="mt-8 text-primary" />
     </div>
 
-    <div class="md:mt-12">
-      <div class="mt-8 md:mt-0 mx-4">
+    <div class="md:my-12">
+      <div class="my-8 md:mt-0 mx-4">
         <h3 class="text-2xl font-semibold text-primary">Modern Web Technologies</h3>
         <div
           class="mt-2"
@@ -126,6 +126,47 @@
           alt="Gridsome logo"
           class="md:w-1/6 md:px-8 md:w-16 md:inline-block"
         />
+      </div>
+    </div>
+    <hr />
+    <!-- end Technologies -->
+    <div class="md:mt-12">
+      <div class="mt-8 md:mt-0 mx-4">
+        <h3 class="text-2xl font-semibold text-primary">Experienced Team</h3>
+        <div
+          class="mt-2"
+        >When selecting a web services firm what you're really buying is the character, experience, and skills of the people working on your project. At Web Matters, the founders, not some first-year intern, will manage your project personally. That means that you get decades of experience across the board whether that be web development, design, marketing, strategy, or analytics.</div>
+        <div class="flex flex-wrap mt-12">
+          <div class="w-full md:w-1/2 px-4">
+            <div class="px-6">
+              <g-image
+                src="~/assets/img/andrew.jpg"
+                alt="Andrew Smith"
+                class="shadow-lg rounded-full max-w-full mx-auto"
+                style="max-width: 180px;"
+              />
+              <div class="pt-6 text-center">
+                <h4 class="text-xl font-bold">Andrew Smith</h4>
+                <div>Andrew is our lead developer, analytics expert, and strategy consultant. He has over 30 years of experience in web development, product management, business intelligence, and marketing. Andrew has worked as an entrepreneur as well as a director with companies like IBM, Thomson Reuters, and McClatchy. He has an MBA in marketing and strategy from Northwestern University and a BA from Colgate University.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full md:w-1/2 px-4 mt-12 md:mt-0">
+            <div class="px-6">
+              <g-image
+                src="~/assets/img/susan.jpg"
+                alt="Susan Smith"
+                class="shadow-lg rounded-full max-w-full mx-auto"
+                style="max-width: 180px;"
+              />
+              <div class="pt-6 text-center">
+                <h4 class="text-xl font-bold">Susan Smith</h4>
+                <div>Susan is a graphic designer and digital marketing expert with over 20 years of experience running her own design firm. She has managed creative teams as a director with Fortune 500 companies like Anixter. Susan has also worked in project management, event planning, and business development. She has a BA in Business Administration and Sociology from Hope College.</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
