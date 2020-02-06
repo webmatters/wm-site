@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col">
-    <the-navbar />
+    <the-navbar class="sticky top-0" />
     <transition name="slide-fade" appear>
       <main class="flex-grow">
         <slot />

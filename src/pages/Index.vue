@@ -1,23 +1,28 @@
 <template>
   <Layout>
     <!-- Hero -->
-    <section class="hero-img">
+    <section class="hero-img" id="top">
       <!-- Hero Text -->
       <div class="container md:flex md:px-4 mx-auto md:py-16 text-white">
-        <div class="py-32 text-center md:w-1/2 md:text-left px-4 md:px-0 md:py-8">
-          <h1
-            class="leading-tight text-4xl md:text-5xl font-semibold"
-          >Making the Web Work for Entrepreneurs</h1>
+        <div
+          class="py-32 text-center md:w-1/2 md:text-left px-4 md:px-0 md:py-8"
+        >
+          <h1 class="leading-tight text-4xl md:text-5xl font-semibold">
+            Making the Web Work for Entrepreneurs
+          </h1>
           <h2
             class="mt-4 tracking-wider text-sm md:text-lg font-semibold uppercase"
-          >Find out what you're missing.</h2>
+          >
+            Find out what you're missing.
+          </h2>
           <button type="button" class="mt-16 btn-grad rounded-full">
             <a
               v-if="$route.path === '/'"
               href="#/services"
               v-scroll-to="'#services'"
               class="btn-grad rounded-full text-white text py-3 px-6 inline-block"
-            >Our Services</a>
+              >Our Services</a
+            >
           </button>
         </div>
       </div>
@@ -33,8 +38,12 @@
 
     <!-- Services -->
     <section id="services" class="bg-primary">
-      <div class="container mx-auto text-center py-12 md:py-24 md:px-8 text-white">
-        <h2 class="uppercase text-4xl tracking-wider font-light">Services</h2>
+      <div
+        class="container mx-auto text-center py-12 md:py-24 md:px-8 text-white"
+      >
+        <h2 class="uppercase text-4xl tracking-wider font-light">
+          Services
+        </h2>
         <services-matrix class="mt-8" />
       </div>
     </section>
